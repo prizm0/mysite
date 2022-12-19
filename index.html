@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Гребенюк Тимофей</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">Обо мне</a></li>
+      <li><a href="#skills" class="nav-link">Навыки</a></li>
+      <li><a href="#projects" class="nav-link">Проекты</a></li> 
+      <li><a href="#contact" class="nav-link">Контакты</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+  <!-- Person Section -->
+  <section class="person">
+    <img src="assets/icons/Картинка для person section (3).png" alt="Я" loading="lazy" class="person-img">
+    <div class="bio animate_animated animate_shakeX">
+      <h2 class="bio-title">Обо мне</h2>
+      <p class="bio-text">
+        Хз че написать, мне было лень думать, капец спать хочу, еще и урок огромный блин. Зато сайт доделал сегодня, горд собой.
+      </p>
+    </div>
+  </section>
+  <section class="more-about">
+    <h2>Дополнительная информация</h2>
+    <p>Не зря 5 месяцев обучался этому, выглядит достойно, в конце концов, но устал люто конечно. Я доволен результатом.</p>
+    <p>Впереди еще bootstrap, jquery и прочая хрень.</p>
+    <p>Делать сайты утомляет, столько кода писать надо, но это того стоит.</p>
+  </section>
+  <section class="skills" id="skills">
+    <h3 class="skills-header">Мои навыки</h3>
+    <div class="skills-wrapper">
+      <div class="skills-set">
+        <img src="assets/icons/html.svg" alt="Иконка" loading="lazy" class="icon icon-card">
+        <img src="assets/icons/css.svg" alt="Иконка" loading="lazy" class="icon icon-card">
+        <img src="assets/icons/javascript.svg" alt="Иконка" loading="lazy" class="icon icon-card">
+      </div>
+      <div class="skills-set">
+        <img src="assets/icons/bootstrap.svg" alt="Иконка" loading="lazy" class="icon icon-card">
+        <img src="assets/icons/react-native.svg" alt="Иконка" loading="lazy" class="icon icon-card">
+        <img src="assets/icons/git.svg" alt="Иконка" loading="lazy" class="icon icon-card">
+      </div>
+    </div>
+  </section>
+  <section class="projects" id="projects">
+    <h3 class="projects-title">Несколько из моих проектов</h3>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img src="assets/icons/calc.png" alt="проект-калькулятор" loading="lazy" class="project-pic">
+        <h4 class="project-title">Калькулятор</h4>
+        <p class="project-details">Калькулятор обычный, не знаю что написать, но я самолично его еще не делал, поэтому пока не знаю чего ждать.</p>
+        <a href="#" target="_blank" class="project-link">Узнать больше</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/icons/food.png" alt="проект-меню" loading="lazy" class="project-pic">
+        <h4 class="project-title">Меню</h4>
+        <p class="project-details">Меню, делал спустя 1 месяц обучения, меню сделано без использования JS'а, тогда еще не приступал к нему, самый первый проект.</p>
+        <a href="#" target="_blank" class="project-link">Узнать больше</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/icons/portfolio.png" alt="проект-портфолио" loading="lazy" class="project-pic">
+        <h4 class="project-title">Портфолио</h4>
+        <p class="project-details">Сайт-портфолио собственно, еще делаю, почти закончен, самый глобальный проект, больше всего им горжусь, устал.</p>
+        <a href="#" target="_blank" class="project-link">Узнать больше</a>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h4>Связаться со мной</h4>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="#" method="post">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="sendname" placeholder="Введите свое имя" class="input-field" required>  
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="sendemail" placeholder="Введите свою почту" class="input-field" required>  
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="60" rows="10" placeholder="Введите свою сообщение" class="input-field" required></textarea>  
+          </div>
+          <div class="form-control">
+            <input type="submit" value="Отправить" id="submit-btn" class="submit-btn">  
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="socials">
+    <a href="#" target="_blank">
+      <img src="assets/icons/twit.gif" alt="twitter" loading="lazy" class="socicon">
+    </a>
+    <a href="#" target="_blank">
+      <img src="assets/icons/insta.gif" alt="instagram" loading="lazy" class="socicon">
+    </a>
+    <a href="#" target="_blank">
+      <img src="assets/icons/link.gif" alt="linkedin" loading="lazy" class="socicon">
+    </a>
+    <a href="#" target="_blank">
+      <img src="assets/icons/github.gif" alt="github" loading="lazy" class="socicon">
+    </a>
+  </div>
+  <i class="scroll-up" id="scroll-up">
+    <img src="assets/icons/иконка стрелки.gif" class="socicon up-arrow" alt="scroll-up">
+  </i>
+  <footer>
+    <p class="copy">©Copyright 2022.</p>
+    <p class="copy">
+      Создано 
+      <a href="#" target="_blank">Гребенюк Тимофей</a>
+    </p>
+  </footer>
+  <script src="assets/js/app.js"></script>
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
